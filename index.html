@@ -12,62 +12,71 @@
 
 <body>
     <header>
-        <button>
-            <a href="index2.html">With HTML</a>
+        <button id="but">
+            <a class="link" href="index2.html">With HTML</a>
         </button>
-        <h1>
-            <u> <b> Curriculum Vitae </b> </u>
+        <div class="header">
+            <h1>
+                Curriculum Vitae
         </h1>
+        </div>
     </header>
 
     <body>
         <main>
-            <img src="./images/my.jpg" alt="my image" width="200" />
-            <h2><u> Personal Details </u></h2>
-            <h3>Name : Shaikh Rehan Shafik</h3>
-            <h3>
+            <div class="image-box">
+                <img class="img" src="./images/my.jpg" alt="my image" width="200" />
+            </div>
+            <div class="details">
+                <h2>Personal Details </h2>
+                <h3>Name : Shaikh Rehan Shafik</h3>
+                <h3>
                 <img src="./images/contact_us.png" alt="contact_us" height="35" width="35" />
                 : 9699XXXXXX
                 </h3>
                 <h3>
                     <img src="./images/gmail.png" alt="gmail" height="35" width="45" />
                     :
-                <a href="https://mail.google.com/mail/u/0/#inbox">rehans19@student.mes.ac.in</a>
+                <a class="details-text" href="https://mail.google.com/mail/u/0/#inbox">rehans19@student.mes.ac.in</a>
                 </h3>
                 <h3>
                     <img src="./images/github.png" alt="github" height="45" width="45" />
                     :
-                    <a href="https://github.com/rydanstar01"> RydanStark01 </a>
+                    <a class="details-text" href="https://github.com/rydanstar01"> RydanStark01 </a>
                 </h3>
                 <h3>
                 <img src="./images/linkedin.png" alt="linkedin" height="35" width="35" />
                 :
-                <a href="https://www.linkedin.cn/in/rehan-shaikh-258385217/">
+                <a class="details-text" href="https://www.linkedin.cn/in/rehan-shaikh-258385217/">
                     Rehan Shaikh
                 </a>
                 </h3>
-                <h3>Current Location :</h3>
+                </div>
+                <div class="loc">
+                    <h3>Current Location </h3>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.1565428685265!2d73.02638922917392!3d19.167834199189695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bfbb1e524569%3A0x8e7ca7b78490aef7!2sSamad%20Arcade!5e0!3m2!1sen!2sin!4v1632295365537!5m2!1sen!2sin"
                 width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                </div>
         </main>
+        <div class="education">
         <section>
-            <h2><u> Education </u></h2>
-            <ul>
-                <li>2002 - 2017 : <b> Symbiosis Convent High School</b></li>
+            <h2>Education </h2>
+            <ul class="education-list">
+                <li>2002 - 2017 : <span class="span-bold"> Symbiosis Convent High School </span></li>
                 <ul>
                     <li>
                         Address : Symbiosis Campus, Opp. Toll Plaza, Mumbra, Bypass,
                         Kausa, Shil, Thane
                     </li>
                     <li>Pusued : Primary and Secondary Education</li>
-                    <li>SSC Result : <i> 92.8%</i> (464 Out of 500 Marks )</li>
+                    <li>SSC Result : <span class="span-italic"> 92.8% </span> (464 Out of 500 Marks )</li>
                 </ul>
             </ul>
-            <ul>
+            <ul class="education-list">
                 <li>
                     2017 - 2019 :
-                    <b> G.E.I.S, M. H. High School and Junior College</b>
+                    <span class="span-bold">G.E.I.S, M. H. High School and Junior College </span>
                 </li>
                 <ul>
                     <li>
@@ -75,13 +84,13 @@
                         Thane,
                     </li>
                     <li>Pusued : Higher Secondary Education</li>
-                    <li>HSC Result : <i> 63.54%</i> (413 Out of 650 Marks)</li>
+                    <li>HSC Result : <span class="span-italic"> 63.54%</span> (413 Out of 650 Marks)</li>
                 </ul>
             </ul>
-            <ul>
+            <ul class="education-list">
                 <li>
                     2019 - 2021 (Present) :
-                    <b> MES Pillai College of Engineering</b>,
+                    <span class="span-bold"> MES Pillai College of Engineering</span>
                 </li>
                 <ul>
                     <li>
@@ -89,12 +98,15 @@
                         16, New Panvel East, Navi Mumbai
                     </li>
                     <li>Pursing : Bachelors in Engineering (IT Majors)</li>
-                    <li>Semester 4 : <i> 82.81%</i> (9.57 Out of 10 CGPA)</li>
+                    <li>Semester 4 : <span class="span-italic"> 82.81% </span> (9.57 Out of 10 CGPA)</li>
                 </ul>
             </ul>
+            
         </section>
+        </div>
+        <div class="technical">
         <section>
-            <h2><u> Techinal Aptitude </u></h2>
+            <h2>Techinal Aptitude </h2>
             <table>
                 <thead>
                     <tr>
@@ -154,12 +166,16 @@
                         table,
                         td,
                         th {
-                            border: 1px solid #333;
+                            border: 1px solid #440d78;
+                            background-color: #ffe047;
                         }
                     </style>
+                    
                     </section>
+                    </div>
+                    <div class="interests">
                     <section>
-                        <h2><u> Interests </u></h2>
+                        <h2>Interests</h2>
                         <ul>
                             <li>Psychology</li>
                             <li>Reading</li>
@@ -168,9 +184,12 @@
                             <li>Kabaddi</li>
                             <li>Chess</li>
                         </ul>
+                        
                     </section>
+                    </div>
+                    <div class="projects">
                     <section>
-                        <h2><u> Project Details </u></h2>
+                        <h2> Project Details </h2>
                         <h3>Web Apps (ReactJs, Python)</h3>
                         <ol>
                             <li>
@@ -255,10 +274,12 @@
                             </p>
                         </details>
                     </ol>
+                    
                     </section>
+                    </div>
     </body>
-    <footer>
-        <hr />
+    <footer class="footer">
+        <hr id="line" />
         <h5>&copy; Curriculum Vitae Foundation</h5>
     </footer>
 </body>
